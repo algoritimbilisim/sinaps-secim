@@ -13,7 +13,7 @@ const mix = require('laravel-mix');
  require('single-file-blade-components');
 
 
- mix.sfbc('resources/views/components/alert.blade.php', 'public/js/alert.js');
+mix.singleFileBladeComponent('resources/views/components/bar/header-top-bar.blade.php', 'public/js/components/bar/header-top-bar.js');
  
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [

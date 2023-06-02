@@ -39,13 +39,13 @@
   Essential stylesheets
   =====================================-->
     <link rel="stylesheet" href="css/components/slider/slider1.css">
-
 </head>
 
 <body id="top" class="{{ setting('site.theme') }}">
 
     <header>
-        <x-header-top-bar />
+        <x-bar.header-top-bar a="paam" />
+        <x-bar.header-top-bar a="" />
 
         <nav class="navbar navbar-expand-lg navigation" id="navbar">
             <div class="container">
@@ -68,8 +68,8 @@
 
     <!-- Slider Start -->
 
-    <section class="slider">
-        @include('components.slider.slider1');
+    <section class="slider" style="all:none !important;">
+        <x-slider.slider1 :slides="$slides" />
     </section>
 
     <section class="banner">
@@ -683,6 +683,7 @@
 
     <script src="js/script.js"></script>
 
+    @stack('scripts')
     <!--
     Component Scripts
     =====================================-->

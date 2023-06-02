@@ -1,20 +1,22 @@
 <?php
 
-namespace App\View\Components\Bar;
+namespace App\View\Components\Slider;
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\View\Component;
 
-class HeaderTopBar extends Component
+class Slider1 extends Component
 {
-    public $a;
+    public $slides;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($a)
+    public function __construct($slides)
     {
-        $this->a = $a;
+        Log::info('Bu bir bilgi log mesajıdır.');
+        $this->slides = $slides; //explode(",", $slides);
     }
 
     /**
@@ -24,6 +26,6 @@ class HeaderTopBar extends Component
      */
     public function render()
     {
-        return view('components.bar.header-top-bar');
+        return view('components.slider.slider1');
     }
 }
