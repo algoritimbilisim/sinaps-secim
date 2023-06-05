@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Home;
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,5 @@ Route::get('/', [Home::class, 'browse'])->name('home');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+//Route::get('/send-emails/{bas}', [MailController::class, 'sendEmails']);
