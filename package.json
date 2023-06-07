@@ -13,9 +13,6 @@
         "axios": "^0.21",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
-        "single-file-blade-components": "^0.0.1"
-    },
-    "dependencies": {
         "laravel-mix": "^6.0.49"
     }
 }

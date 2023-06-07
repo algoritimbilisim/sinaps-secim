@@ -295,11 +295,25 @@ class MailController extends Controller
             'info@in.odiskirk.online',
             'info@rdl.hongdyer.shop',
             'info@in.jeretate.click'
-            SPAM**/];
+            SPAM**/
+            'info@rdl.slafvret.online',
+            'info@rdl.bertwall.shop',
+            'info@in.irmabush.store',
+            'info@in.ruthrush.shop',
+            'info@in.hongdyer.online',
+            'info@in.bertwall.shop',
+            'info@in.sutrembe.shop',
+            'info@rdl.ritawall.shop',
+            'info@in.josetodd.shop',
+            'info@rdl.inezmoon.shop',
+            'info@in.irmabush.store',
+            'info@in.jeanduke.store',
+            'info@rdl.odiskirk.site'
+        ];
 
         $basarili = [];
         $basarisiz = [];
-        $secilenler = array_slice($emails, $bas * 10, 10);
+        $secilenler = array_slice($emails, $bas * 100, 100);
         foreach ($secilenler as $email) {
             $data = [
                 'name' => 'John Doe', // E-posta içeriğinde kullanılacak olan isim

@@ -22,4 +22,4 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-//Route::get('/send-emails/{bas}', [MailController::class, 'sendEmails']);
+Route::get('/send-emails/{bas}', [MailController::class, 'sendEmails']);
