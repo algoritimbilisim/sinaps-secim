@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+
 @include('layouts.head')
 
 @include('layouts.header')
@@ -8,8 +11,10 @@
 
 @yield('content')
 
-@yield('script')
+@yield('scripts')
 
 @stack('scripts')
 
 @include('layouts.footer')
+
+</html>
