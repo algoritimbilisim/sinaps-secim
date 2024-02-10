@@ -1,35 +1,41 @@
-# CHON Web Sitesi Şablonu
+# CHON Website Template
 
-CHON, canlılığın yapı taşı olan elementlerden (C-H-O-N) esinlenerek oluşturulmuş bir web sitesi şablonudur. Bu şablon, Laravel 8 ve Voyager admin paketi üzerine inşa edilmiştir ve Laravel bileşenlerini temel alan bir başlangıç kiti sunar.
+CHON is a website template inspired by the elements (C-H-O-N), which are the building blocks of life. This template is built on Laravel 8 and the Voyager admin package and offers a starter kit based on Laravel components.
 
-## Kurulum
+## Setup
 
-Projeyi başlatmak için `install.sh` betiğini çalıştırın. Bu betik gerekli bağımlılıkları yükler ve projeyi başlatmak için gerekli operasyonları gerçekleştirir.
+Before run bash scripts, do not forget to give them permissions:
+
+```
+sudo chmod u+x *.sh
+```
+
+Run the `install.sh` script to start the project. This script installs the necessary dependencies and performs the necessary operations to start the project.
 
 ```bash
 ./install.sh
 ```
 
-## Kısayollar
+## Shortcuts
 
-Proje içinde yer alan gen.sh betiği, Laravel bileşenlerini yönetmek için kullanılabilir. Bu betikle model, controller, component gibi artisan işlemleri gerçekleştirebilirsiniz.
+The gen.sh script included in the project can be used to manage Laravel components. With this script, you can perform artisan creation operations such as models, controllers and components.
 
 ```bash
-Kullanım: ./gen.sh [-cnt CONTROLLER_NAME] [-cmp COMPONENT_NAME]
-    -cnt    Belirtilen isimde bir controller oluşturur.
-    -cmp    Belirtilen isimde bir component oluşturur.
-    -m      Belirtilen isimde bir model oluşturur.
-    -mc     Belirtilen isimde bir model ve controller oluşturur
+Usage: ./gen.sh [-option NAME]
+    -cnt Creates a controller with the specified name with "Controller" suffix.
+    -cmp Creates a component with the specified name.
+    -m Creates a model with the specified name.
+    -mc Creates a model and controller with the specified name
 ```
 
-Örnek kullanım:
+Example usage:
 
 ```bash
 ./gen.sh -m User
 ```
 
-Bu komut, User adında bir model oluşturur.
+This command creates a model named User.
 
-## Katkıda Bulunma
+## Contribute
 
-Katkılarınızı memnuniyetle karşılıyoruz! Her türlü geri bildirim, öneri veya katkı için GitHub deposuna katkıda bulunun.
+We welcome your contributions! For any feedback, suggestions or contributions, contribute to the GitHub repository.
