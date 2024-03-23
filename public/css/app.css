@@ -1,1 +1,18 @@
+@font-face {
+    font-family: lmsans;
+    src: url(/fonts/lmsans10-bold.otf);
+}
 
+/*public/ 
+  
+  public/fonts/lmsans10-boldoblique.otf 
+  
+  public/fonts/lmsans10-oblique.otf 
+  
+  public/fonts/lmsans10-regular.otf 
+  
+  public/fonts/lmsansdemicond10-regular.otf*/
+
+body {
+    --bs-body-font-family: lmsans;
+}
