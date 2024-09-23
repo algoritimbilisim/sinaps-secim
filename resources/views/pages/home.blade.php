@@ -57,7 +57,7 @@
 
         <script type="text/javascript">
             var data = @php echo $chartVotes; @endphp;
-            var totalVotes = @php echo $totalVotes; @endphp;
+            var totalVotes = @php echo $validVoteCount; @endphp;
 
             // ECharts'ta kullanılacak veri
             var xAxisData = [];
